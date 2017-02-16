@@ -1,24 +1,14 @@
-# README
+## Running this app
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This app ẃas created following this tutorial:
 
-Things you may want to cover:
+https://docs.docker.com/compose/rails/
 
-* Ruby version
+Start the app
+`sudo docker-compose up -d`
 
-* System dependencies
+Create a db
+`sudo docker-compose run web rake db:create`
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+(This is also in Dockerfile but not working)
+`RUN web rake db:create`
