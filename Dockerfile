@@ -7,4 +7,3 @@ ADD Gemfile.lock /myapp/Gemfile.lock
 RUN bundle install
 ADD . /myapp
 RUN rm -f tmp/pids/server.pid
-RUN web rake db:create
